@@ -144,10 +144,13 @@ article{
     }
 }
 
+footer{
+    position: absolute;
+    width: 100%;
+}
 .attribution {
     font-size: 1rem; 
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     color: var(--very-dark-blue);
 }
 .attribution a {
