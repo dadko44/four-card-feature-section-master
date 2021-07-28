@@ -94,6 +94,9 @@ article{
 .karma-article{ border-top: 0.3rem solid var(--orange);}
 .calculator-article{ border-top: 0.3rem solid var(--blue);}
 
+.hidden{
+    display: none;
+}
 
 @media (min-width: 73.5rem){
     /* *** SIZING AND ALIGNMENT *** */
