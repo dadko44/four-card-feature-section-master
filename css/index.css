@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+    /* *** PRIMARY COLORS *** */
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* *** NEUTRAL COLORS *** */
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+
+
+/* *** MAIN PAGE STRUCTURE *** */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--very-light-gray);
+}
+main{
+    box-sizing: border-box;
+    width: 23.4375rem;
+    margin: auto;
+    padding: 4.2rem 2.1rem 4rem 2.1rem;
+    text-align: center;
+}
+
+
+
+/* *** WELCOMING TITLE AND MESSAGE *** */
+
+h1{
+    font-size: 1.51rem;
+    color: var(--very-dark-blue);
+}
+span{
+    font-weight: 200;
+}
+.welcome-text{
+    font-size: 0.95rem;
+    line-height: 1.55rem;
+    color: var(--grayish-blue);
+}
+
+
+
+/* *** CARDS SECTION ***    */
+
+section{
+    margin-top: 4.7rem;
+}
+h2{
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--very-dark-blue);
+}
+article{
+    box-sizing: border-box;
+    position: relative;
+    width: 19.5rem;
+    height: 14rem;
+
+    margin: 0 auto 1.5rem auto;
+    padding: 1.35rem 1.7rem 1.35rem 1.7rem;
+    border-top: 0.3rem solid var(--cyan);
+    border-radius: 0.2rem;
+    box-shadow: 0rem 1rem 1rem 0.2rem rgba(15, 75, 165, 0.15);
+
+    text-align: left;
+}
+.card-desc{
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+    color: var(--grayish-blue);
+}
+.article-icon{
+    position: absolute;
+    right: 1.9rem;
+    bottom: 1.9rem;
+    width: 3.55rem;
+}
+
+.supervisor-article{ border-top: 0.3rem solid var(--cyan);}
+.tb-article{ border-top: 0.3rem solid var(--red);}
+.karma-article{ border-top: 0.3rem solid var(--orange);}
+.calculator-article{ border-top: 0.3rem solid var(--blue);}
+
+
+@media (min-width: 73.5rem){
+    /* *** SIZING AND ALIGNMENT *** */
+
+    main{
+        width: unset;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    article{
+        margin: unset;
+        width: 21.875rem;
+        height: 15.75rem;
+        margin-bottom: 2rem;
+    }
+    .column{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .center-vert{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .article-icon{
+        width: 4rem;
+    }
+
+
+
+    /* *** TYPOGRAPHY *** */
+
+    h1{
+        font-size: 2.25rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1.1rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.01rem;
+    }
+    .welcome-text{
+        margin: 0 auto 0 auto;
+        max-width: 32.5rem;  
+    }
+}
+
+.attribution {
+    font-size: 1rem; 
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--very-dark-blue);
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); }
